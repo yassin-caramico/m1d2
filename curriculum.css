@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.riquadro-a4 {
+  width: 21cm;
+  height: 29.7cm;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.curriculum {
+  padding: 40px;
+}
+
+.nome {
+  margin: 0;
+}
+
+.posizione {
+  margin: 5px 0;
+  font-style: italic;
+}
+
+.contatti {
+  margin-bottom: 20px;
+}
+
+.sezione {
+  margin-bottom: 20px;
+}
+
+.sezione h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sezione p,
+.sezione ul {
+  margin: 5px 0;
+}
+
+.sezione li {
+  list-style-type: disc;
+}

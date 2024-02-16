@@ -77,7 +77,13 @@ Modify the previous answer inserting this information and, applying the same rul
 */
 
 /* WRITE YOUR CODE HERE */
+let totalShoppingCart = 60;
+let discount = 0.20; // 20% di sconto
+let shippingCost = totalShoppingCart > 50 ? 0 : 10;
+let discountedTotal = totalShoppingCart * (1 - discount);
+let totalCost = discountedTotal + shippingCost;
 
+console.log("Il costo totale dopo lo sconto del Black Friday è: " + totalCost + " euro");
 /* EXERCISE 8
 Create an object representing a car with properties like brand, model, licensePlate.
 After you create the first car, clone it and change the licensePlate without affecting the original car.
@@ -85,7 +91,42 @@ Do it for five cars.
 */
 
 /* WRITE YOUR CODE HERE */
-
+class Car {
+    constructor(marca, modello, targa) {
+      this.marca = marca;
+      this.modello = modello;
+      this.targa = targa;
+    }
+    
+    // Metodo per clonare la macchina
+    clona() {
+      return new Car(this.marca, this.modello, this.targa);
+    }
+  }
+  
+  // Creazione della prima macchina
+  const primaMacchina = new Car('Toyota', 'Corolla', 'ABC123');
+  
+  // Clonazione della prima macchina e modifica della targa
+  const secondaMacchina = primaMacchina.clona();
+  secondaMacchina.targa = 'DEF456';
+  
+  // Creazione e modifica di altre macchine
+  const terzaMacchina = primaMacchina.clona();
+  terzaMacchina.targa = 'GHI789';
+  
+  const quartaMacchina = primaMacchina.clona();
+  quartaMacchina.targa = 'JKL012';
+  
+  const quintaMacchina = primaMacchina.clona();
+  quintaMacchina.targa = 'MNO345';
+  
+  // Stampa delle informazioni sulle macchine
+  console.log('Prima macchina:', primaMacchina);
+  console.log('Seconda macchina:', secondaMacchina);
+  console.log('Terza macchina:', terzaMacchina);
+  console.log('Quarta macchina:', quartaMacchina);
+  console.log('Quinta macchina:', quintaMacchina);
 /* EXERCISE 9
 Create a new array called carsForRent containing all the cars from the previous exercise
 */
