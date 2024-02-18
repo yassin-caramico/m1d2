@@ -1,48 +1,58 @@
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
-.riquadro-a4 {
-  width: 21cm;
-  height: 29.7cm;
-  margin: 50px auto;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between; /* Distribuisci gli elementi su tutta la larghezza della pagina */
+  margin: 20px; /* Aggiungi un margine per separare i contenuti dai bordi della pagina */
 }
 
-.curriculum {
-  padding: 40px;
+.left-column {
+  flex: 1; /* La colonna sinistra occupa tutto lo spazio disponibile */
+  border-right: 1px solid #000; /* Aggiungi una linea divisoria tra le colonne */
+  padding: 20px; /* Aggiungi spazio intorno al contenuto */
 }
 
-.nome {
-  margin: 0;
+.right-column {
+  flex: 1; /* La colonna destra occupa tutto lo spazio disponibile */
+  padding: 20px; /* Aggiungi spazio intorno al contenuto */
 }
 
-.posizione {
-  margin: 5px 0;
-  font-style: italic;
+/* Stile per la foto */
+.profile-image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  max-width: 200px;
+  height: auto;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-.contatti {
-  margin-bottom: 20px;
+h1,
+h2 {
+  color: #333;
 }
-
-.sezione {
-  margin-bottom: 20px;
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: blue;
 }
-
-.sezione h2 {
-  margin: 0;
-  font-size: 18px;
+h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
 }
-
-.sezione p,
-.sezione ul {
-  margin: 5px 0;
-}
-
-.sezione li {
-  list-style-type: disc;
+p {
+  font-size: 23px;
+  line-height: 1.6;
 }
